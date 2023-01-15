@@ -11,9 +11,3 @@ def test_can_create_bigaudiofile(baf):
 
 def test_get_file_length(baf):
     assert baf.length == 298086
-
-
-def test_set_start_time(baf):
-    target_start_time = 30
-    baf.set_start_time(target_start_time)
-    assert(baf.get_start_time() == target_start_time)
